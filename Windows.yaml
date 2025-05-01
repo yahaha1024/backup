@@ -18,7 +18,7 @@
   
 proxy-groups:
 #分流分组
-  - {name: 手动切换, type: select, proxies: [自动选择, DIRECT, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png }
+  - {name: 手动切换, type: select, proxies: [自动选择, DIRECT, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 土耳其], icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png }
   - {name: 自动选择, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png }
   - {name: OpenAi,   type: select, proxies: [台湾节点, 美国节点, 手动切换], icon: https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT5.png }
   - {name: Perplexity,   type: select, proxies: [土耳其, 美国节点, 手动切换], icon: https://raw.githubusercontent.com/yahaha1024/icons/main/perplexity.PNG }
@@ -88,7 +88,7 @@ rules:
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
 
-# 自定义
+# 教程
 # https://wiki.metacubex.one/config/rules/
 +rules:
  - PROCESS-NAME,Telegram.exe,Telegram
